@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".palyerActivity">
+
+
+    <LinearLayout
+        android:layout_weight="6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        >
+
+        <Button
+            android:id="@+id/ListButtonId"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/list"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/jbwelcomeimage" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            >
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_height="10dp"
+                android:id="@+id/seekBarId"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="100dp"
+                android:backgroundTintMode="multiply"
+                android:backgroundTint="@android:color/black"
+                android:progressTint="@android:color/white"
+                android:background="@android:color/holo_blue_bright"
+                />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/pasue_icon"
+                android:id="@+id/pauseId"
+                android:layout_marginTop="5dp"
+                />
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/nextId"
+                android:background="@drawable/next_icon"
+                android:layout_toRightOf="@id/pauseId"
+                android:layout_marginTop="15dp"
+                />
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/prevId"
+                android:background="@drawable/prev_icon"
+                android:layout_toLeftOf="@id/pauseId"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:id="@+id/songNameId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:ellipsize="marquee"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/songName"
+                android:textColor="@android:color/background_dark"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:text="@string/jb360"
+                android:textSize="30sp"
+                android:textColor="@android:color/background_dark"
+                android:textStyle="bold"
+                android:fontFamily="cursive"
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">JbPlayer</string>
+    <string name="jbplayer">JB Player</string>
+    <string name="songName">Song Name</string>
+    <string name="jb360">Friend - ForEver</string>
+    <string name="list">Song List</string>
+    <string name="welcome">Welcome</string>
+    <string name="batch">2014--Family</string>
+    <string name="song_list">Song List:</string>
+    <string name="todo">TODO</string>
+    <string name="Error">Error.... this song is corrupted</string>
+</resources>
