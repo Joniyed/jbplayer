@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#41BAD1A5"
+    tools:context=".Main2Activity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilePhoto"
+        android:layout_width="165dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="128dp"
+        android:src="@drawable/btn_google_dark_normal"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/email_id"
+        android:layout_width="318dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/emailid"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profilePhoto" />
+
+    <TextView
+        android:id="@+id/id_no"
+        android:layout_width="319dp"
+        android:layout_height="35dp"
+        android:background="#F9FCFF"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/id_no"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_id"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <Button
+        android:id="@+id/sign_out_button"
+        android:layout_width="221dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="64dp"
+        android:background="#FFFFFF"
+        android:text="@string/sign_out"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_no" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

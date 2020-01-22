@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SingInWith_Goggle_FB</string>
+    <string name="emailid">EmailID</string>
+    <string name="id_no">id_no</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="todo">TODO</string>
+    <string name="facebook_app_id">801206250397804</string>
+    <string name="fb_login_protocol_scheme">fb801206250397804</string>
+
+</resources>
